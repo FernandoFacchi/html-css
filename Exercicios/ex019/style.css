@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*HTML id e CSS é # (Pode ser usado apenas em um elemento)
+HTML Class e CSS é . (Pode ser usado em mais de um elemento)
+*/
+body{
+    color: rgb(2, 1, 7);
+    background-attachment: fixed;
+    background-image:linear-gradient(to top, #9ec8ffd7, #ebf3ffc5 , #9ec8ffea);
+    font: normal 16px "arial", verdana, sans-serif;
+    text-align: justify;
+}
+h1#principal{
+    background-color: rgba(2, 32, 116, 0.925);
+    color: rgb(211, 232, 255);
+    text-align: center;
+}
+.subtitulo{
+    text-align: left;
+    background-image:linear-gradient(to bottom, #9ec8ffd7, #ebf3ffc5 0.9px, #9ec8ffea);
+    color: rgb(4, 14, 107);
+}
+h2{
+    text-align: left;
+    color: rgb(0, 0, 0);
+
+}
+p{
+    text-indent: 30px;
+}
+
+.basico{
+    color: rgba(0, 128, 0, 0.801);
+}
+.intermediario{
+    color: rgba(171, 184, 1, 0.801);
+
+}
+.avancado{
+    color: rgba(128, 0, 0, 0.801);
+
+}
+.leitura{
+    background-attachment:scroll;
+    background-image:linear-gradient(to bottom, #9ec8ffd7, #9ec8ffea,#ebf3ffc5 );
+}
+.destaque{
+    color:rgba(0, 128, 0, 0.801);
+    font-weight: bolder;
+    font-size: 120%;
+}

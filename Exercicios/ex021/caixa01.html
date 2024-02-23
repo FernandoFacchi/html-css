@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caixas em HTML5</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font: 1em Arial, Helvetica, sans-serif;
+        }
+        h1{ /*box-level*/
+            /*display: inline;*/
+            height: 350px;
+            width: 350px;
+            background-color: wheat;
+            border: 8px solid cornflowerblue;
+            margin: 20px 25px 20px 25; 
+            outline: 4px dashed orange;         
+        }
+        a{/*inline-level*/
+            /*display: block;*/
+            color: black;
+            text-decoration: none;
+            border: solid cadetblue;
+            padding: 0.2px;
+        }
+        a:hover{
+           color: #ffffff; 
+           text-decoration: underline;
+           background-color: cadetblue;
+           padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixa</h1>
+    <p>Parágrafos também são exemplos de box-level, mas <a href="#">os links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona...</p>
+</body>
+</html>
