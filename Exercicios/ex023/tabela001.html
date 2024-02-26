@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebelas</title>
+    <style>
+        table {
+            width: 350px;
+            height: 350px;
+            border-collapse: collapse;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        td {
+            text-align: center; /*alinhamento horizontal*/
+            vertical-align: top;/*alinhamento vertical*/
+            color: white;
+            border: 1px solid black;
+            padding: 6px;
+            background-image: linear-gradient(to bottom, rgb(161, 160, 160), rgb(48, 48, 48));
+        }
+        td:hover {
+            background-color: black;
+            color: yellow;
+        }
+
+        .numero {
+            text-align: right;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+            Table = tabela
+                TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+
+
+
+    -->
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td class="numero">242</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td class="numero">87</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td class="numero">1098</td>
+        </tr>
+    </table>
+</body>
+</html>
