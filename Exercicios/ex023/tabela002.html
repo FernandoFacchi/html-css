@@ -5,17 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de tabelas grandes</title>
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
         table {
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
-        tr, td, th {
+        
+        td, th {
             border: 1px solid black;
-            padding: 5px;
+            padding: 10px;
         }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #3b3b3b;
             color: white;
         }
+        
+        thead {
+            position: sticky;
+            top: 0;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
         td.num {
             text-align: right;
         }
@@ -26,6 +52,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -34,11 +61,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População
-                    <p>(Censo de 2022)</p>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População
                 </th>
             </tr>
         </thead>
@@ -154,10 +181,12 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total</td>
+                <th scope="row">Total</th>
                 <td class="num">203 062 512</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure distinctio ab soluta nulla, consequuntur numquam at. Harum, aliquam est! Unde nulla quod vitae nostrum quia, libero tempora, et fuga itaque doloribus id architecto quos incidunt facilis, dolores harum voluptates nemo quasi vel provident consectetur? Cupiditate ea aperiam incidunt consequatur blanditiis, quam expedita animi neque sapiente dolorum explicabo? Blanditiis fugit, animi labore suscipit similique quibusdam aspernatur voluptatum nulla laboriosam recusandae omnis? Hic incidunt aperiam alias voluptatum distinctio veritatis libero? Deserunt provident laboriosam voluptate eligendi accusantium soluta quisquam pariatur amet neque rem? Omnis expedita earum reiciendis nobis autem perspiciatis molestiae! Repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tempora exercitationem! Dolorem fuga temporibus neque ut ex id beatae molestiae obcaecati, dolorum libero perferendis nemo natus, quia ab. Cum reiciendis unde reprehenderit voluptas perspiciatis, fugit earum rem. Optio, similique in nostrum aspernatur repellat rem id atque itaque? Doloremque quod blanditiis dolores perspiciatis laborum repudiandae minima, nam, quos soluta explicabo enim amet! Minus vero sunt ipsum! Repudiandae excepturi qui illo ullam facilis neque vel eveniet quia ad sit commodi expedita voluptatem sequi voluptatibus exercitationem et cupiditate alias temporibus, aliquid, molestiae nesciunt fugiat? Totam enim ex exercitationem quam soluta corrupti facere pariatur nisi minima vero! Repellendus distinctio nisi, deserunt est amet vitae quos accusantium odio praesentium perferendis voluptate corporis dolorum porro assumenda, repellat saepe officiis vero repudiandae. Debitis quos tempore adipisci, totam, dicta repellat harum commodi animi dolor doloribus necessitatibus inventore enim quaerat accusamus pariatur a magnam sunt, consequatur reiciendis asperiores recusandae magni molestias mollitia illum. Atque placeat explicabo esse quis aspernatur necessitatibus aut asperiores voluptas, eius, voluptatem minima ipsa numquam voluptatibus et mollitia accusantium fugiat commodi in est autem repellendus repellat eveniet animi. Ad, id quisquam accusamus iste ratione ducimus consequuntur cum blanditiis cumque pariatur quae hic obcaecati laudantium atque architecto nesciunt quos. Velit, nemo repellendus praesentium aut distinctio repellat, iste, deleniti ipsa sed at molestias hic dicta optio. Officia cumque sit nostrum iusto autem quos doloremque magnam dolores laborum quidem earum deserunt aliquid rem dolorem voluptatum, amet iure Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic fugit sequi id soluta fugiat voluptatem voluptatum minima accusantium. Tempora quod veritatis fugit mollitia magnam quaerat incidunt reiciendis eius dolores dolorem!   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis quasi consequatur ducimus libero sit maxime laudantium maiores perferendis, commodi alias earum provident cumque ad architecto ut dolorum illo error. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur deleniti ipsum ratione quos fugiat eos minima rem vel, repellat perferendis dolorem provident accusantium natus? Eligendi amet ea totam optio illum?
+    </p>
 </body>
 </html>
