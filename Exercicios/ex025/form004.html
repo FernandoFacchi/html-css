@@ -7,28 +7,30 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <fieldset>
-        <legend>Dados Pessoais</legend>
-        <form action="cadastro.php">
+
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
             <p>
                 <label for="inome">Nome Completo: </label>
                 <input type="text" name="nome" id="inome" required>
             </p>
             <p>
                 <label for="imail">E-mail: </label>
-                <input type="email" name="email" id="imail" required autocomplete="email" size="40">
+                <input type="email" name="email" id="imail" required autocomplete="email" size="29">
             </p>
             <!-- Estudar mais sobre RegEx-->
             <p>
                 <label for="itel">Telefone:</label>
-                <input type="tel" name="telefone" id="itel" placeholder="(xx)xxxx-xxxx" required>
+                <input type="tel" name="telefone" id="itel" placeholder="(xx)xxxx-xxxx" required size="27.5">
             </p>
             
-            <p>
-                <input type="submit" value="Cadastrar">
-                <input type="reset" value="Limpar">
-            </p>
-        </form>
-    </fieldset>
+        </fieldset>
+        <p>
+            <input type="submit" value="Cadastrar" required>
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
 </body>
 </html>
