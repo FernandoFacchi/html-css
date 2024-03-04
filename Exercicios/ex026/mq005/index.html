@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tecnologia pelo Mundo</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <Menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Curiosidades</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="#">Seções</a></li>
+                <li><a href="#">Informativo</a></li>
+                <li><a href="#">Creditos</a></li>
+            </ul>
+        </Menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Nasa e SpaceX lançam foguete com quatro tripulantes para missão espacial de longa duração</h2>
+            <p>
+                Três astronautas norte-americanos e um cosmonauta russo estão a caminho da Estação Espacial Internacional para estadia de seis meses na órbita da Terra; cerca de 250 experimentos serão realizados no espaço
+            </p>
+            <p>
+                Um foguete da SpaceX decolou com segurança da Flórida, nos EUA, na madrugada desta segunda-feira (4), transportando uma tripulação de três astronautas norte-americanos e um cosmonauta russo a caminho da Estação Espacial Internacional (ISS) para iniciar uma missão científica de seis meses na órbita da Terra.
+            </p>
+            <p>
+                O foguete Falcon 9 de dois estágios, coberto com uma cápsula Crew Dragon operada de forma autônoma, chamada Endeavour, foi lançado do Centro Espacial Kennedy da Nasa em Cabo Canaveral, ao longo da costa atlântica da Flórida.
+            </p>
+                
+            <p>
+                Uma transmissão ao vivo da Nasa-SpaceX mostrou o foguete de 25 andares subindo da torre de lançamento enquanto seus nove motores Merlin ganhavam vida em nuvens ondulantes de vapor e uma bola de fogo avermelhada que iluminava o céu noturno.
+            </p>
+            
+            <p>
+                O foguete consome 700 mil galões de combustível por
+                segundo durante o lançamento, segundo a SpaceX.
+            </p>
+
+            <p>
+                O estágio superior do Falcon levou o Endeavour à sua órbita inicial nove minutos após a decolagem, com vídeo ao vivo da cabine mostrando os quatro tripulantes amarrados lado a lado, vestidos com seus trajes de voo brancos e pretos com capacete.
+            </p>
+
+            <p>
+                “Que viagem incrível até a órbita”, disse o astronauta Matthew Dominick, de 42 anos, comandante do voo e um dos três novatos em voos espaciais a bordo da cápsula, por rádio para o controle fora de Los Angeles. “Um grande obrigado à SpaceX.”
+            </p>
+
+            <p>
+                “Realmente honrado em pilotar esta nave espacial de nova geração com esta tripulação de nova geração”, disse o veterano da Nasa Michael Barratt, de 64 anos, de seu assento ao lado de Dominick.
+            </p>
+        </article>
+    </main>
+<script>
+    function clickMenu() {
+       if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+       } else {
+            itens.style.display = 'block'
+       }
+    }
+</script>
+</body>
+</html>
