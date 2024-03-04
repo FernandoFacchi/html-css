@@ -34,12 +34,13 @@ i#burguer {
     background-color: var(--cor03);
     display: block;
     padding: 10px;
+    margin-bottom: 5px;
     text-align: center;
     cursor: pointer;
 }
 
 i#burguer:hover {
-    background-color: var(--cor01);
+    background-color: var(--cor02);
     color: var(--cor05);
 }
 
@@ -56,14 +57,14 @@ menu > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    color: var(--cor04);
-    background-color: var(--cor01);
-    border-top: 2px solid #035aa64f;
+    color: var(--cor02);
+    background-color: var(--cor03);
 }
 
 menu > ul > li > a:hover {
-    background-color: var(--cor04);
-    color: var(--cor01);
+   background-color: var(--cor02);
+   color: var(--cor05);
+   transition: 0.3s;
 }
 
 main {
@@ -74,6 +75,7 @@ main {
     margin: auto;
     background-color: white;
     border: 1px solid #ffffff;
+    box-shadow: 3px 6px 6px #00000013;
 }
 
 article > h2 {
@@ -84,28 +86,16 @@ article > h2 {
 article > p {
     text-align: justify;
     margin-bottom: 20px;
-    line-height: 28px;
     text-indent: 20px;
 }
 
-footer {
-    padding: 15px;
-    margin: auto;
+aside {
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
     background-color: var(--cor04);
-}
-
-footer > p {
-    text-align: center;
     color: var(--cor02);
-
 }
-
-footer > p > a {
+aside > a {
+    color: var(--cor02);
     text-decoration: none;
-    color: var(--cor02);
-    
-}
-
-footer > p > a:hover {
-    color:var(--cor01) ;
 }
